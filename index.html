@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Desarrollo Web Moderno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Dev<span>SoftV</span></div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#interactivo">Interactivo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <h1>Desarrollo Web Moderno</h1>
+            <p>Explora las últimas tecnologías y técnicas para crear experiencias web impresionantes, responsivas y accesibles para todos los dispositivos.</p>
+            <a href="#caracteristicas" class="btn pulse">Descubre Más</a>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <img src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg" alt="Imagen 1">
+                <img src="https://cdn.pixabay.com/photo/2015/02/24/02/04/code-647012_1280.jpg" alt="Imagen 2">
+                <img src="https://cdn.pixabay.com/photo/2023/10/10/05/52/website-8305451_1280.jpg" alt="Imagen 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Características -->
+    <section class="features" id="caracteristicas">
+        <div class="container">
+            <h2 class="section-title">Tecnologías Modernas</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5 Semántico</h3>
+                    <p>Estructura tu contenido con etiquetas semánticas que mejoran la accesibilidad y el SEO.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3 Avanzado</h3>
+                    <p>Crea diseños impresionantes con Flexbox, Grid, animaciones y efectos visuales modernos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript ES6+</h3>
+                    <p>Desarrolla interactividad avanzada con las últimas características de JavaScript moderno.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Diseño Responsivo</h3>
+                    <p>Crea sitios que se adapten perfectamente a cualquier dispositivo y tamaño de pantalla.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Multimedia -->
+    <section class="multimedia" id="multimedia">
+        <div class="container">
+            <h2 class="section-title">Contenido Multimedia</h2>
+            <div class="media-container">
+                <div class="media-box">
+                    <h3>Sobre el Diseño Responsivo</h3>
+                    <div class="video-container">
+                       <iframe 
+                         width="560" 
+                         height="315" 
+                         src="C:\Users\Lenovo\Documents\Proyecto final-DSV\Que es el Diseño Responsivo.mp4" 
+                         frameborder="0" 
+                         allowfullscreen>
+                         referrerpolicy="strict-origin-when-cross-origin"
+                            </iframe>
+                    </div>
+                    <p>Explicación sencilla acerca del diseño responsivo.</p>
+                </div>
+                <div class="media-box">
+                    <div class="audio-container">
+                        <h3>Audio de la web</h3>
+                        <p>Incorporación de un audio en un sitio web</p>
+                        <audio controls>
+                            <source src="C:\Users\Lenovo\Documents\Proyecto final-DSV\tvs-pro-by-audio-club-349373.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Blog -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Artículos Recientes</h2>
+            
+          
+            <div class="blog-container" id="blogContainer">
+                <!-- Vista de lista de artículos  -->
+                <div class="blog-list active" id="blogList">
+                    <div class="blog-grid">
+                        <article class="blog-card" data-article="1">
+                            <div class="blog-img">
+                                <img src="https://aukera.es/blog/imagenes/imagen11.png" alt="Diseño Responsivo">
+                            </div>
+                            <div class="blog-content">
+                                <h3>Diseño Responsivo: Conceptos y recomendaciones básicas</h3>
+                                <p>Crea sitios que se adapten a cualquier dispositivo.</p>
+                                <a href="#" class="read-more" data-article="1">Leer más →</a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card" data-article="2">
+                            <div class="blog-img">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Frameworks JavaScript">
+                            </div>
+                            <div class="blog-content">
+                                <h3>JavaScript Moderno</h3>
+                                <p>Aprende las nuevas características de ES6+.</p>
+                                <a href="#" class="read-more" data-article="2">Leer más →</a>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card" data-article="3">
+                            <div class="blog-img">
+                                <img src="https://cdn.pixabay.com/photo/2021/06/28/07/02/seo-6370764_1280.png" alt="Optimización Web">
+                            </div>
+                            <div class="blog-content">
+                                <h3>Optimización Web</h3>
+                                <p>Mejora la velocidad de tu sitio web.</p>
+                                <a href="#" class="read-more" data-article="3">Leer más →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Vista detalle del artículo -->
+                <div class="article-detail" id="articleDetail">
+                    <div class="article-header">
+                        <button class="back-btn" id="backToBlog">
+                            <i class="fas fa-arrow-left"></i> Volver a Artículos
+                        </button>
+                        <h3 class="article-detail-title" id="articleTitle"></h3>
+                    </div>
+                    
+                    <div class="article-main">
+                        <div class="article-content-wrapper">
+                            <div class="article-content" id="articleContent"></div>
+                        </div>
+                        
+                        <!-- Sidebar con artículos relacionados -->
+                        <aside class="article-sidebar">
+                            <h4>Más Artículos</h4>
+                            <div class="related-articles-list" id="relatedArticles">
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Interactiva -->
+    <section class="interactive" id="interactivo">
+
+             <div class="container">
+             <div class="color-picker">
+                <h3>Personaliza el Tema</h3>
+                <p>Haz clic en los botones para cambiar el color de la página</p>
+                <div class="color-box" id="colorBox"></div>
+                <div class="color-controls">
+                    <button class="color-btn" style="background-color: #3498db;" data-color="#3498db">Azul</button>
+                    <button class="color-btn" style="background-color: #e74c3c;" data-color="#e74c3c">Rojo</button>
+                    <button class="color-btn" style="background-color: #2ecc71;" data-color="#2ecc71">Verde</button>
+                    <button class="color-btn" style="background-color: #9b59b6;" data-color="#9b59b6">Púrpura</button>
+                    <button class="color-btn" style="background-color: #f39c12;" data-color="#f39c12">Naranja</button>
+                </div>
+            </div>
+            
+            <div class="game-container">
+                <h3>Juego de Colores</h3>
+                <p>Haz clic en el cuadrado que coincida con el color indicado</p>
+                <div class="game-info">
+                    <p>Color objetivo: <span id="targetColor">ROJO</span></p>
+                    <p>Puntuación: <span id="score">0</span></p>
+                    <p>Tiempo: <span id="time">30</span>s</p>
+                </div>
+                <div class="game-grid" id="gameGrid"></div>
+                <button id="startGame" class="btn">Comenzar Juego</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Bocas del Toro, Panamá</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+507 +++ ++++ +++</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>ammy.arauz@utp.ac.pa - jose.arauz@utp.ac.pa</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Lunes - Viernes: 9:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- última parte -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WebDev</h3>
+                    <p>Especialistas en desarrollo web moderno, creamos experiencias digitales excepcionales con las últimas tecnologías.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/home?lang=es"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Ammyya23/repositorio-en-nube"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <p><a href="#inicio" class="footer-link">Inicio</a></p>
+                    <p><a href="#caracteristicas" class="footer-link">Características</a></p>
+                    <p><a href="#multimedia" class="footer-link">Multimedia</a></p>
+                    <p><a href="#blog" class="footer-link">Blog</a></p>
+                    <p><a href="#interactivo" class="footer-link">Interactivo</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe las últimas noticias sobre desarrollo web.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Tu email" id="newsletterEmail">
+                        <button class="btn-small" id="subscribeBtn">Suscribirse</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Desarrollo Web Moderno. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
